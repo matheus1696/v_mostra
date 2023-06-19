@@ -1,0 +1,186 @@
+/*
+Projeto: V Amostra Científica
+Autor: Matheus André Bezerra Mota
+Contato: matheus.mat96@hotmail.com
+Versão: 1.0.0
+*/
+
+*{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (max-width: 700px){
+    main{
+        justify-content: start;
+        margin-top: 100px;
+    }
+}
+
+h3{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#background{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+#video{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;    
+    position: absolute;
+    z-index: -2;
+}
+
+#video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+#banner{    
+    width: 100vw;
+}
+
+#logo{
+    background: url(../img/logo_mono.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+}
+
+@media (max-width: 700px) {
+    #logo{
+        height: 200px;
+    }   
+}
+
+#navegacao{    
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#navegacao ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -40px;
+}
+
+@media (max-width: 700px) {
+    #navegacao ul{
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.link{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+.link:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 7px black;
+    transition: 500ms;
+}
+
+.link-off{
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 5px;
+    padding: 10px 50px;
+}
+
+#apoio{
+    max-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px black;
+    padding: 10px 50px;
+}
+
+@media (max-width: 700px) {
+    #apoio{        
+        gap: 0;
+        padding: 0;
+        margin-bottom: 50px;
+    }   
+}
+
+#apoio div{
+    width: 110px;
+    height: 40px;
+    padding: 30px 30px;
+}
+
+#apoio div#asces{
+    background: url(../img/asces.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#apoio div#ufpe{
+    background: url(../img/ufpe.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#apoio div#unifavip{
+    background: url(../img/unifavip.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#apoio div#uninassau{
+    background: url(../img/uninassau.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
