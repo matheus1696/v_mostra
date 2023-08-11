@@ -12,54 +12,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5º Mostra Científica</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="shortcut icon" href="assets/img/logo_resumida.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/print.css" media="print">
+    <script src="assets/js/lista.js"></script>
 </head>
 <body>
 
     <main>
 
         <!-- Vídeo Background -->
-        <section id="video">
+        <section id="video" class="none">
             <video src="assets/movie/moviecompression.mp4" autoplay loop></video>
         </section>
 
         <!-- Background Superior -->
-        <section id="background"></section>
+        <section id="background" class="none"></section>
 
         <!-- Logo da Mostra Científica -->
-        <section>
+        <section class="none">
             <div id="banner">
                 <div id="logo"></div>
             </div>
         </section>
 
         <!-- Barra de Navegação -->
-        <section>
-            <nav id="navegacao">
-                <ul>
-                    <!-- <li><a href="#" class="link">Sobre</a></li> -->
-                    <li><a href="assets/doc/edital_v_mostra_cientifica_sms_caruaru.pdf" class="link" target="_blank">Edital</a></li>                  
-                    <li><a  class="link-off">Inscrição</a></li>                  
-                    <li><a href="assets/doc/lista_aprovados_v_mostra_científica.pdf" class="link" target="_blank">Resultado</a></li>
-                    <li><a href="certificado.html" class="link">Emitir Certificado</a></li>
-                </ul>
-            </nav>
+        <section class="none">
+            <div id="navegacao">
+                <form id="form_certificado">
+                    <div class="row justify-content-center align-items-center">
+                        <input type="text" name="cadastrado" id="cadastrado" class="col-12 col-form-label mb-3 rounded border-0" placeholder="CPF: 12345678925">    
+                        <button type="submit" class="btn link col-12">Buscar</button>
+                    </div>
+                </form>
+                <div class="mt-3 text-white row">
+                    <p><strong>Nome:</strong> <span class="nome"></span></p>
+                </div>
+            </div>
         </section>
 
-        <!-- Parceiros -->
-        <section>
-            <p class="text-white mb-1 pb-1">Apoio:</p>
-            <div id="apoio" class="row justify-content-center align-items-center gap-5 rounded shadow">
-                <div id="ufpe" class="col-12 col-md-6 col-lg-3"></div>
-                <div id="asces"></div>
-                <div id="unifavip"></div>
-                <div id="uninassau"></div>
-            </div>            
+
+        <section id="print">
+            <div> Certificamos que <span class="nomeCandidado"></span> apresentou o trabalho <span>tal</span> na V Mostra Científica.</div>
         </section>
 
     </main>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

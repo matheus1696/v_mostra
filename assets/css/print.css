@@ -1,0 +1,16 @@
+#print{
+    display: block;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+.none{
+    display: none;
+    background: transparent;
+    color: #000;
+    text-shadow: none; 
+    filter: none;
+    -ms-filter: none;
+}
