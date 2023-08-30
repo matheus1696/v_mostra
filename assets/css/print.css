@@ -12,9 +12,9 @@ body{
     width: 29.7cm;
     height: 21cm;
     display: block;
-    background-image: url(../img/certificado.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url(../img/certificado.jpg) !important; 
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
     font-size: 1.2em;
     line-height: 1.5em;
     display: flex;

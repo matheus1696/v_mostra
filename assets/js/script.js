@@ -18,6 +18,7 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
 
 
             document.querySelector('.titulo').innerHTML = lista_cadastrados[i].trabalho
+            document.querySelector('.autores').innerHTML = ""
 
             if (lista_cadastrados[i].relator != "") {
                 document.querySelector('.autores').innerHTML += lista_cadastrados[i].relator
