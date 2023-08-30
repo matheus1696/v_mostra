@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="assets/css/print.css" media="print">
     <link rel="shortcut icon" href="assets/img/logo_resumida.ico" type="image/x-icon">
     <script src="assets/js/lista.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/cert.js" defer></script>
 </head>
 <body>
     <main>
@@ -51,9 +53,10 @@
                 
                 <p class="text-white text-center detalhes-relator"><strong>Relator: </strong><span class="relator"></span></p>
             </div>
-        </section>
-
-        
+            <div style="width: 250px;">                
+                <button class="btn-link" id="geraPDF">Baixar Certificado</button> 
+            </div>
+        </section>        
 
         <section class="print">
             <p> Certificamos que o trabalho intitulado "<span class="titulo"></span>", de autoria de <span class="autores"></span>, foi apresentado na Categoria <span class="modalidade"></span> na V MOSTRA CIENTÍFICA - Socializando Conhecimento para uma Saúde Melhor. O evento ocorreu no dia 22 de agosto de 2022, nas instalações da Secretaria Municipal de Saúde de Caruaru.

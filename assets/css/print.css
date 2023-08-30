@@ -8,7 +8,8 @@ body{
     padding: 0;
     background-image: url(../img/certificado.jpg) !important; 
     background-repeat: no-repeat !important;
-    background-size: 100% 100% !important;
+    background-size: 100% 100% !important;    
+    --print-color-adjust: exact;
 }
 
 .print{

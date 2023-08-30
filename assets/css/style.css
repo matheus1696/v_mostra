@@ -17,6 +17,7 @@
         background-image: url(../img/certificado.jpg) !important; 
         background-repeat: no-repeat !important;
         background-size: 0% 0% !important;
+        --print-color-adjust: exact;
     }
 
     @media print{

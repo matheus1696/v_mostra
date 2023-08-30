@@ -16,7 +16,6 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             document.querySelector('.detalhes-modalidade').style.display="block"
             document.querySelector('.detalhes-relator').style.display="block"
 
-
             document.querySelector('.titulo').innerHTML = lista_cadastrados[i].trabalho
             document.querySelector('.autores').innerHTML = ""
 
@@ -52,16 +51,10 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             document.querySelector('.modalidade').innerHTML = lista_cadastrados[i].modalidade
 
             cadastroEncontrado = true;
-                if (cadastroEncontrado) {
-                    
-                    window.print()
-                }
 
             break; // Se encontrado, não há necessidade de continuar o loop
         }
-    }
-
-    
+    }    
 
     if (!cadastroEncontrado) {
         document.querySelector('.detalhes-trabalho').style.display="none"
