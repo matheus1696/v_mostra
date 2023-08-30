@@ -50,14 +50,18 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             }
 
             document.querySelector('.modalidade').innerHTML = lista_cadastrados[i].modalidade
-            
+
             cadastroEncontrado = true;
-            if (cadastroEncontrado) {
-                window.print()
-            }
+                if (cadastroEncontrado) {
+                    
+                    window.print()
+                }
+
             break; // Se encontrado, não há necessidade de continuar o loop
         }
     }
+
+    
 
     if (!cadastroEncontrado) {
         document.querySelector('.detalhes-trabalho').style.display="none"

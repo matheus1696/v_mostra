@@ -13,7 +13,10 @@
 
     body{
         margin: 0;
-        padding: 0;
+        padding: 0;        
+        background-image: url(../img/certificado.jpg) !important; 
+        background-repeat: no-repeat !important;
+        background-size: 100% 100% !important;
     }
 
     main{
