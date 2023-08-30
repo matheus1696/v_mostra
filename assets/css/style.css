@@ -16,7 +16,13 @@
         padding: 0;        
         background-image: url(../img/certificado.jpg) !important; 
         background-repeat: no-repeat !important;
-        background-size: 100% 100% !important;
+        background-size: 0% 0% !important;
+    }
+
+    @media print{
+        body{
+            background-size: 100% 100% !important;
+        }
     }
 
     main{
