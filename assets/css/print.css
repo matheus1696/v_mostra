@@ -9,22 +9,22 @@ body{
 }
 
 .print{
-    width: 100vw;
-    height: 100vw;
+    width: 29.7cm;
+    height: 21cm;
     display: block;
     background-image: url(../img/certificado.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 1.5em;
-    line-height: 1.8em;
+    background-size: 100% 100%;
+    font-size: 1.2em;
+    line-height: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .print p{
-    padding-left: 225px;
-    padding-right: 175px;
+    padding-left: 300px;
+    padding-right: 100px;
     text-align: justify;
 }
 

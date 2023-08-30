@@ -1,5 +1,15 @@
 const lista_cadastrados = [
-  { inscricao:  'AC1', trabalho: 'Vivência das Danças Circulares para Profissionais de Saúde: Possibilidades de Ampliação do Cuidado em PICS', modalidade: 'Apresentação Criativa', relator: 'José Leandro Aleixo', orientador: '', autor1: 'Rebecca Brayner Pereira', autor2: '', autor3: '', autor4: ''},
+  { 
+    inscricao:  'AC1', 
+    trabalho: 'Vivência das Danças Circulares para Profissionais de Saúde: Possibilidades de Ampliação do Cuidado em PICS', 
+    modalidade: 'Apresentação Criativa', 
+    relator: 'José Leandro Aleixo', 
+    orientador: '', 
+    autor1: 'Rebecca Brayner Pereira', 
+    autor2: '', 
+    autor3: '', 
+    autor4: ''
+  },
 { inscricao:  'AC2', trabalho: 'A Organização de Medicamentos Visando Controle da Hipertensão de uma Paciente Atendida na USF Centenário', modalidade: 'Apresentação Criativa', relator: 'José Vinicius Vasconcelos da Silva', orientador: 'Saulo Ferreira Feitosa', autor1: 'Idson Emanuel Cavalcanti Silva', autor2: 'Pedro Antônio Ferreira de Mendonça', autor3: 'Heva Helen Santos de Oliveira', autor4: 'Breno Martins da Silva'},
 { inscricao:  'AC3', trabalho: 'Lixo, Conscientização e Arte', modalidade: 'Apresentação Criativa', relator: 'Rodrigo Merison', orientador: 'Paula Rodrigues da Silva', autor1: '', autor2: '', autor3: '', autor4: ''},
 { inscricao:  'AO10', trabalho: 'a Importância da Estimulação Sensório Motora em Neonatos Pré Termo', modalidade: 'Apresentação Oral', relator: 'Bianca Marinho Gonçalves', orientador: 'Ery de Albuquerque Magalhães Neto', autor1: 'Kerolaine da Silva Oliveira', autor2: '', autor3: '', autor4: ''},
