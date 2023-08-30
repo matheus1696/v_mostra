@@ -1,12 +1,34 @@
-#print{
-    display: block;
-    background-color: green;
+@page{
+    size: a4 landscape;
     margin: 0;
-    padding: 0;
-    z-index: 99;
 }
 
-.none{
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.print{
+    width: 100vw;
+    height: 100vw;
+    display: block;
+    background-image: url(../img/certificado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.print p{
+    padding-left: 225px;
+    padding-right: 175px;
+    text-align: justify;
+}
+
+.no-print{
     display: none;
     background: transparent;
     color: #000;

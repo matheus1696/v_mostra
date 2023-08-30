@@ -6,172 +6,247 @@
     Versão: 1.0.0
 */
 
-*{
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-}
+/* Definições Gerais */
+    *{
+        font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
 
-body{
-    margin: 0;
-    padding: 0;
-}
+    body{
+        margin: 0;
+        padding: 0;
+    }
 
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-@media (max-width: 700px){
     main{
-        justify-content: start;
-        margin-top: 100px;
-    }
-}
-
-h3{
-    font-size: 0.9em;
-    font-weight: 600;
-    color: white;
-    margin-left: 10px;
-    margin-bottom: 5px;
-}
-
-#background{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;  
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.55);
-}
-
-#video{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;    
-    position: absolute;
-    z-index: -2;
-}
-
-#video video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-#banner{    
-    width: 100vw;
-}
-
-#logo{
-    background: url(../img/logo_mono.png) no-repeat;
-    background-position: center;
-    background-size: contain;
-    height: 300px;
-}
-
-@media (max-width: 700px) {
-    #logo{
-        height: 200px;
-    }   
-}
-
-#navegacao{    
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-#navegacao ul{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-left: -40px;
-}
-
-@media (max-width: 700px) {
-    #navegacao ul{
+        display: flex;
         flex-direction: column;
-        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
     }
-}
 
-.link{
-    font-size: 0.9em;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px 50px;
-}
+        @media (max-width: 769px){
+            main{
+                justify-content: start;
+                margin-top: 100px;
+            }
+        }
 
-.link:hover{
-    color: black;
-    background-color: white;
-    box-shadow: 1px 1px 7px black;
-    transition: 500ms;
-}
+    input{
+        color: gray;
+        font-size: 0.9em;
+        font-weight: 500;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        width: 97%;
+        outline: none;
+        text-align: center;
+    }
 
-.link-off{
-    font-size: 0.9em;
-    font-weight: 500;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: rgba(128, 128, 128, 0.5);
-    border: 1px solid rgb(128, 128, 128);
-    border-radius: 5px;
-    padding: 10px 50px;
-}
+        input:focus{
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.750);
+        }
 
-#apoio{
-    max-width: 80vw;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 30px;
-    margin-bottom: 50px;
-}
+/* Definições da Página */
 
-#apoio div{
-    width: 150px;
-    height: 40px;
-    padding: 30px;
-}
+    section#bg{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;  
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
 
-#apoio div#asces{
-    background: url(../img/asces.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+    section#bg-video{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;    
+        position: absolute;
+        z-index: -2;
+    }
 
-#apoio div#ufpe{
-    background: url(../img/ufpe.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+    section#bg-video video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 
-#apoio div#unifavip{
-    background: url(../img/unifavip.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+    section#banner{    
+        width: 100vw;
+    }
 
-#apoio div#uninassau{
-    background: url(../img/uninassau.png) no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+    section div#logo{
+        background: url(../img/logo_mono.png) no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 300px;
+    }
 
-#print{
+        @media (max-width: 769px) {
+            section div#logo{
+                height: 200px;
+            }   
+        }
+
+    section nav#navegacao{    
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    section nav#navegacao ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin-left: -40px;
+    }
+
+        @media (max-width: 769px) {
+            section nav#navegacao ul{
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+
+    #apoio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        max-width: 80vw;    
+        padding: 40px;
+        margin-bottom: 50px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 10px;
+    }
+
+        @media (max-width: 769px) {
+            #apoio{
+                flex-direction: column;
+            }
+        }
+
+    #apoio div{
+        width: 150px;
+        height: 40px;
+        padding: 30px;
+    }
+
+    #apoio div#asces{
+        background: url(../img/asces.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #apoio div#ufpe{
+        background: url(../img/ufpe.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #apoio div#unifavip{
+        background: url(../img/unifavip.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    #apoio div#uninassau{
+        background: url(../img/uninassau.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    section#form{   
+        width: 25vw;
+        margin: 30px 0;
+    }
+
+        @media (max-width: 768px) {
+            section#form{   
+                width: 80vw;
+            }   
+        }
+
+    section form#form-cert{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    section#info-cert{
+        width: 90vw;
+    }
+
+/* Classes */
+
+    /* Classes Links*/
+        .link{
+            font-size: 0.9em;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px 50px;
+        }
+        
+            .link:hover{
+                color: black;
+                background-color: white;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.750);
+                transition: 600ms;
+            }
+        
+        .link-off, .link-off:hover{
+            color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(128, 128, 128, 0.5);
+            border: 1px solid rgb(128, 128, 128);            
+            box-shadow: none;
+        }
+
+    /* Classes Links*/
+        .btn-link{
+            font-size: 0.9em;
+            font-weight: 500;
+            color: white;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+        }
+        
+            .btn-link:hover{
+                color: black;
+                background-color: white;
+                box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.750);
+                transition: 600ms;
+            }
+
+    /* Classes Fontes*/
+
+        /*Classes de Cores*/
+            .text-white{
+                color: white;
+            }
+
+        /* Alinhamento */
+            .text-center{
+                text-align: center;
+            }
+    
+.print{
     display: none;
 }
