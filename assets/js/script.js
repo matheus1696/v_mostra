@@ -11,7 +11,8 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             document.querySelector('.inscricao').innerHTML = lista_cadastrados[i].inscricao
             document.querySelector('.trabalho').innerHTML = lista_cadastrados[i].trabalho
             document.querySelector('.modalidade').innerHTML = lista_cadastrados[i].modalidade
-            document.querySelector('.relator').innerHTML = lista_cadastrados[i].relator
+            document.querySelector('.relator').innerHTML = lista_cadastrados[i].relator                         
+            document.querySelector('#desc-cert').style.display="block"   
             document.querySelector('.detalhes-trabalho').style.display="block"
             document.querySelector('.detalhes-modalidade').style.display="block"
             document.querySelector('.detalhes-relator').style.display="block"
@@ -51,19 +52,27 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             document.querySelector('.modalidade').innerHTML = lista_cadastrados[i].modalidade
 
             cadastroEncontrado = true;
+            if (cadastroEncontrado) {                
+                inscricao = lista_cadastrados[i].inscricao.toLowerCase()
+
+                document.querySelector('#baixarPDF').style.display="block"
+                document.querySelector('#baixarPDF').setAttribute('href','assets/doc/'+inscricao+'.pdf')
+            }
 
             break; // Se encontrado, não há necessidade de continuar o loop
         }
     }    
 
-    if (!cadastroEncontrado) {
+    if (!cadastroEncontrado) {            
+        document.querySelector('#desc-cert').style.display="block"   
         document.querySelector('.detalhes-trabalho').style.display="none"
         document.querySelector('.detalhes-modalidade').style.display="none"
-        document.querySelector('.detalhes-relator').style.display="none"
+        document.querySelector('.detalhes-relator').style.display="none"  
+        document.querySelector('#baixarPDF').style.display="none"
         document.querySelector('.trabalho').innerHTML = ""
         document.querySelector('.modalidade').innerHTML = ""
         document.querySelector('.relator').innerHTML = ""
-        document.querySelector('.inscricao').innerHTML = "Inscrição não localizada."
+        document.querySelector('.inscricao').innerHTML = "Inscrição não localizada."   
         
         alert(`Código da inscrição ${input} não foi localizado`)
     }

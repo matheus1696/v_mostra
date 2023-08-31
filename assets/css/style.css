@@ -35,6 +35,13 @@
         height: 100vh;
     }
 
+        @media (max-width: 1025){
+            main{
+                justify-content: start;
+                margin-top: 150px;
+            }
+        }
+
         @media (max-width: 769px){
             main{
                 justify-content: start;
@@ -132,9 +139,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
         max-width: 80vw;    
-        padding: 40px;
+        padding: 30px;
         margin-bottom: 50px;
         background-color: rgba(255, 255, 255, 0.85);
         border-radius: 10px;
@@ -147,9 +153,9 @@
         }
 
     #apoio div{
-        width: 150px;
+        width: 200px;
         height: 40px;
-        padding: 30px;
+        padding:0 30px;
     }
 
     #apoio div#asces{
@@ -199,6 +205,10 @@
         width: 90vw;
     }
 
+    #baixarPDF, #desc-cert{
+        display: none;
+    }
+
 /* Classes */
 
     /* Classes Links*/
@@ -207,6 +217,7 @@
             font-weight: 500;
             color: white;
             text-decoration: none;
+            text-align: center;
             border: 1px solid white;
             border-radius: 5px;
             padding: 10px 50px;

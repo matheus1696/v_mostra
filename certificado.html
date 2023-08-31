@@ -13,11 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5º Mostra Científica</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print">
     <link rel="shortcut icon" href="assets/img/logo_resumida.ico" type="image/x-icon">
     <script src="assets/js/lista.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="assets/js/cert.js" defer></script>
+
 </head>
 <body>
     <main>
@@ -53,8 +51,8 @@
                 
                 <p class="text-white text-center detalhes-relator"><strong>Relator: </strong><span class="relator"></span></p>
             </div>
-            <div style="width: 250px;">                
-                <button class="btn-link" id="geraPDF">Baixar Certificado</button> 
+            <div style="width: 250px; margin: auto;">                
+                <a class="link" id="baixarPDF" target="_blank">Baixar Certificado</a> 
             </div>
         </section>        
 
@@ -63,6 +61,7 @@
             </p>
         </section>
     </main>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
