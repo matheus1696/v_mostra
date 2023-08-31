@@ -17,40 +17,6 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
             document.querySelector('.detalhes-modalidade').style.display="block"
             document.querySelector('.detalhes-relator').style.display="block"
 
-            document.querySelector('.titulo').innerHTML = lista_cadastrados[i].trabalho
-            document.querySelector('.autores').innerHTML = ""
-
-            if (lista_cadastrados[i].relator != "") {
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].relator
-            }
-
-            if (lista_cadastrados[i].autor1 != "") {
-                document.querySelector('.autores').innerHTML += ", "
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].autor1
-            }
-
-            if (lista_cadastrados[i].autor2 != "") {
-                document.querySelector('.autores').innerHTML += ", "
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].autor2
-            }
-
-            if (lista_cadastrados[i].autor2 != "") {
-                document.querySelector('.autores').innerHTML += ", "
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].autor3
-            }
-
-            if (lista_cadastrados[i].autor2 != "") {
-                document.querySelector('.autores').innerHTML += ", "
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].autor4
-            }
-
-            if (lista_cadastrados[i].orientador != "") {
-                document.querySelector('.autores').innerHTML += ", "
-                document.querySelector('.autores').innerHTML += lista_cadastrados[i].orientador
-            }
-
-            document.querySelector('.modalidade').innerHTML = lista_cadastrados[i].modalidade
-
             cadastroEncontrado = true;
             if (cadastroEncontrado) {                
                 inscricao = lista_cadastrados[i].inscricao.toLowerCase()
@@ -63,17 +29,21 @@ document.getElementById("form-cert").addEventListener("submit", function(event) 
         }
     }    
 
-    if (!cadastroEncontrado) {            
-        document.querySelector('#desc-cert').style.display="block"   
-        document.querySelector('.detalhes-trabalho').style.display="none"
-        document.querySelector('.detalhes-modalidade').style.display="none"
-        document.querySelector('.detalhes-relator').style.display="none"  
-        document.querySelector('#baixarPDF').style.display="none"
-        document.querySelector('.trabalho').innerHTML = ""
-        document.querySelector('.modalidade').innerHTML = ""
-        document.querySelector('.relator').innerHTML = ""
-        document.querySelector('.inscricao').innerHTML = "Inscrição não localizada."   
-        
-        alert(`Código da inscrição ${input} não foi localizado`)
+    if (!cadastroEncontrado) {
+        if (input != "") {                        
+            document.querySelector('#desc-cert').style.display="block"   
+            document.querySelector('.detalhes-trabalho').style.display="none"
+            document.querySelector('.detalhes-modalidade').style.display="none"
+            document.querySelector('.detalhes-relator').style.display="none"  
+            document.querySelector('#baixarPDF').style.display="none"
+            document.querySelector('.trabalho').innerHTML = ""
+            document.querySelector('.modalidade').innerHTML = ""
+            document.querySelector('.relator').innerHTML = ""
+            document.querySelector('.inscricao').innerHTML = "Inscrição não localizada."   
+            
+            alert(`Código da inscrição ${input} não foi localizado, favor entrar em contato através do e-mail mostracientificanep@gmail.com`)
+        } else {
+            alert(`Informe o código de inscrição`)
+        }
     }
 });

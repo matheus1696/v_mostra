@@ -12,18 +12,9 @@
     }
 
     body{
+        min-height: 600px;
         margin: 0;
-        padding: 0;        
-        background-image: url(../img/certificado.jpg) !important; 
-        background-repeat: no-repeat !important;
-        background-size: 0% 0% !important;
-        --print-color-adjust: exact;
-    }
-
-    @media print{
-        body{
-            background-size: 100% 100% !important;
-        }
+        padding: 0;
     }
 
     main{
@@ -34,13 +25,6 @@
         width: 100vw;
         height: 100vh;
     }
-
-        @media (max-width: 1025){
-            main{
-                justify-content: start;
-                margin-top: 150px;
-            }
-        }
 
         @media (max-width: 769px){
             main{
@@ -96,16 +80,17 @@
         height: 100%;
     }
 
-    section#banner{    
-        width: 100vw;
+    section#banner div{    
+        width: 100vw;        
+        height: 200px;
     }
 
     section div#logo{
         background: url(../img/logo_mono.png) no-repeat;
         background-position: center;
         background-size: contain;
-        height: 250px;
     }
+
 
         @media (max-width: 769px) {
             section div#logo{
@@ -115,7 +100,7 @@
 
     section nav#navegacao{    
         margin-top: 75px;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
     }
 
     section nav#navegacao ul{
@@ -139,6 +124,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
         max-width: 80vw;    
         padding: 30px;
         margin-bottom: 50px;
@@ -149,12 +135,13 @@
         @media (max-width: 769px) {
             #apoio{
                 flex-direction: column;
+                gap: 50px;
             }
         }
 
     #apoio div{
         width: 200px;
-        height: 40px;
+        height: 70px;
         padding:0 30px;
     }
 
