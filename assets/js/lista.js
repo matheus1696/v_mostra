@@ -1,18 +1,6 @@
 const lista_cadastrados = [
-  { 
-    inscricao:  'AC1', 
-    trabalho: 'Vivência das Danças Circulares para Profissionais de Saúde: Possibilidades de Ampliação do Cuidado em PICS', 
-    modalidade: 'Apresentação Criativa', 
-    relator: 'José Leandro Aleixo', 
-    orientador: '', 
-    autor1: 'Rebecca Brayner Pereira', 
-    autor2: '', 
-    autor3: '', 
-    autor4: ''
-  },
-
+  { inscricao:  'AC1', trabalho: 'Vivência das Danças Circulares para Profissionais de Saúde: Possibilidades de Ampliação do Cuidado em PICS', modalidade: 'Apresentação Criativa', relator: 'José Leandro Aleixo', orientador: '', autor1: 'Rebecca Brayner Pereira', autor2: '', autor3: '', autor4: ''},
   { inscricao:  'AC2', trabalho: 'A Organização de Medicamentos Visando Controle da Hipertensão de uma Paciente Atendida na USF Centenário', modalidade: 'Apresentação Criativa', relator: 'José Vinicius Vasconcelos da Silva', orientador: 'Saulo Ferreira Feitosa', autor1: 'Idson Emanuel Cavalcanti Silva', autor2: 'Pedro Antônio Ferreira de Mendonça', autor3: 'Heva Helen Santos de Oliveira', autor4: 'Breno Martins da Silva'},
-
   { inscricao:  'AC3', trabalho: 'Lixo, Conscientização e Arte', modalidade: 'Apresentação Criativa', relator: 'Rodrigo Merison', orientador: 'Paula Rodrigues da Silva', autor1: '', autor2: '', autor3: '', autor4: ''},
   { inscricao:  'AO10', trabalho: 'a Importância da Estimulação Sensório Motora em Neonatos Pré Termo', modalidade: 'Apresentação Oral', relator: 'Bianca Marinho Gonçalves', orientador: 'Ery de Albuquerque Magalhães Neto', autor1: 'Kerolaine da Silva Oliveira', autor2: '', autor3: '', autor4: ''},
   { inscricao:  'AO14', trabalho: 'Pet-Saúde: Ferramenta para Aumento da Resolutividade do Acolhimento Atenção Básica no Município de Caruaru', modalidade: 'Apresentação Oral', relator: 'Dielison da Silva Rodrigues de Deus', orientador: 'Rafaela Niels da Silva', autor1: 'Ádila Ferreira Alves', autor2: '', autor3: '', autor4: ''},
@@ -41,7 +29,7 @@ const lista_cadastrados = [
   { inscricao:  'AO5', trabalho: 'Acolherdor: Grupo de Cuidado Ao Luto na Atenção Básica: Relato de Experiência', modalidade: 'Apresentação Oral', relator: 'Anna Vírginya Simões da Silva', orientador: '', autor1: 'Marcela Paula de Melo Batista', autor2: 'Erivaldo José dos Santos Júnior', autor3: '', autor4: ''},
   { inscricao:  'AO7', trabalho: 'Serviços de Atenção Farmacêutica: um Relato de Experiência', modalidade: 'Apresentação Oral', relator: 'Arielle Diane de Albuquerque Silva', orientador: 'Caroliny Henrique Pereira da Silva', autor1: 'Tarcila Karinny Henrique da Silva', autor2: 'David Breno da Silva Medeiros', autor3: 'Matheus Givanildo da Silva', autor4: 'Elkiane Cássia da Silva Bezerra'},
   { inscricao:  'AO11', trabalho: 'Acolhimento Com Classificação de Risco na Unidade de Pronto Atendimento: Relato de Experiência', modalidade: 'Apresentação Pôster', relator: 'Bianca Thais Silva do Nascimento', orientador: 'Iale Thais Silva do Nascimento', autor1: 'Larissa Francielly Andrade de Sousa', autor2: 'Maria Fernanda de Lemos Schuler  ', autor3: 'Regiane Santana da Conceição Ferreira Cabanha', autor4: 'Eduarda Augusto Melo'},
-  { inscricao:  'AO12', trabalho: 'O Cuidado do Corpo Após a Morte na Unidade de Terapia Intensiva', modalidade: 'Apresentação Pôster', relator: 'Bianca Thaís Silva do Nascimento', orientador: 'Iale Thais Silva do Nascimento', autor1: 'Laís Batista Brito de Assis', autor2: 'Maria Eduarda Ferreira', autor3: 'Eduarda Augusto Melo', autor4: 'Rodrigo Daniel Zanoni'},
+  { inscricao:  'AO12', trabalho: 'O Cuidado do Corpo Após a Morte na Unidade de Terapia Intensiva', modalidade: 'Apresentação Pôster', relator: 'Bianca Thaís Silva do Nascimento', orientador: 'Laís Batista Brito de Assis', autor1: 'Maria Eduarda Ferreira', autor2: 'Eduarda Augusto Melo', autor3: 'Iale Thais Silva do Nascimento', autor4: 'Rodrigo Daniel Zanoni'},
   { inscricao:  'AO19', trabalho: 'Escuta Qualificada no Que Tange à Política Nacional de Humanização: um Olhar do Usuário', modalidade: 'Apresentação Pôster', relator: 'Gilvanice Danielly Ramos de Macêdo', orientador: 'Eduardo Henriques de Melo', autor1: 'Letícia Maria Dantas Váz de Sá', autor2: 'Uely Alves da Silva', autor3: '', autor4: ''},
   { inscricao:  'AO25', trabalho: 'Programa Saúde na Escola Como Potência na Articulação Intersetorial do Trabalho Interdisciplinar na Atenção Primária ', modalidade: 'Apresentação Pôster', relator: 'José Leandro Aleixo', orientador: '', autor1: 'Gislayne de Oliveira Florencio Arcanjo', autor2: 'Joselma Patrícia de Lima Silva', autor3: '', autor4: ''},
   { inscricao:  'AO30', trabalho: 'Participação do Farmacêutico em Grupo de Hiperdia:  Relato de Experiência ', modalidade: 'Apresentação Pôster', relator: 'Karen Millena da Silva Souza', orientador: '', autor1: 'Analúcia Guedes Silveira Cabral', autor2: ' Rayane Tamires Andrade da Silva', autor3: 'Graziely Veríssimo de Melo', autor4: 'Darlene Glória Santos Alves'},

@@ -16,7 +16,7 @@ for (let i = 0; i < lista_cadastrados.length; i++) {
     if (lista_cadastrados[i].autor4 != "") {
         autor += lista_cadastrados[i].autor4 + ", "        
     }
-    if (lista_cadastrados[i].autor4 != "") {
+    if (lista_cadastrados[i].orientador != "") {
         autor += lista_cadastrados[i].orientador       
     }
 
